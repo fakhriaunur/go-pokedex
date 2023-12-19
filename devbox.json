@@ -1,12 +1,12 @@
 {
   "packages": [
-    "go@latest",
-    "gopls@latest",
-    "golint@latest",
-    "goimports@latest",
-    "gotools@latest",
-    "gcc@latest",
-    "libcap@latest"
+    "go@1.23.1",
+    //"gopls@latest",
+    //"golint@latest",
+    //"goimports@latest",
+    //"gotools@latest",
+    //"gcc@latest",
+    //"libcap@latest"
   ],
   "shell": {
     "init_hook": [
@@ -14,9 +14,10 @@
       "export \"GOROOT=$(go env GOROOT)\""
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ]
+      "install": "go get ./...",
+      "build": "go build -o main.go",
+      "run": "go run",
+      "test": "go run main.go"
     }
   }
 }
