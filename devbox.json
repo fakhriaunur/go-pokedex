@@ -1,10 +1,10 @@
 {
   "packages": [
     "go@latest",
-    "gopls@latest",
-    "golint@latest",
-    "goimports@latest",
-    "gotools@latest",
+    //"gopls@latest",
+    //"golint@latest",
+    //"goimports@latest",
+    //"gotools@latest",
     "gcc@latest",
     "libcap@latest"
   ],
