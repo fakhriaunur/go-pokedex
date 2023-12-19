@@ -10,7 +10,8 @@
   ],
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
+      "echo 'Welcome to devbox!' > /dev/null",
+      "export \"GOROOT=$(go env GOROOT)\""
     ],
     "scripts": {
       "test": [
