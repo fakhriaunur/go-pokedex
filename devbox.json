@@ -15,7 +15,7 @@
     ],
     "scripts": {
       "install": "go get ./...",
-      "build": "go build -o main.go",
+      "build_run": "go build && ./go-pokedex",
       "run": "go run",
       "test": "go run main.go"
     }
