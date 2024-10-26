@@ -17,7 +17,7 @@
       "install": "go get ./...",
       "build_run": "go build && ./go-pokedex",
       "run": "go run",
-      "test": "go run main.go"
+      "test": "go test ./..."
     }
   }
 }
