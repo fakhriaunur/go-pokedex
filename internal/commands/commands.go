@@ -10,7 +10,7 @@ type Config struct {
 type cliCommand struct {
 	Name        string
 	Description string
-	Callback    func(*Config) error
+	Callback    func(*Config, ...string) error
 }
 
 func GetCommands() map[string]cliCommand {
@@ -34,6 +34,11 @@ func GetCommands() map[string]cliCommand {
 			Name:        "mapb",
 			Description: "Navigates to previous location-area",
 			Callback:    commandMapb,
+		},
+		"explore": {
+			Name:        "explore <location>",
+			Description: "Explore a specific location",
+			Callback:    commandExplore,
 		},
 	}
 }
