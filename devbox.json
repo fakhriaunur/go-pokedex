@@ -15,9 +15,10 @@
     ],
     "scripts": {
       "install": "go get ./...",
-      "build_run": "go build && ./go-pokedex",
+      "build_run": "go build -o go-pokedex ./cmd/main && ./go-pokedex",
       "run": "go run",
-      "test": "go test ./..."
+      "test": "go test ./...",
+      "tidy": "go mod tidy"
     }
   }
 }
